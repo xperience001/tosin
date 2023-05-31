@@ -1,0 +1,1784 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vmax;
+    margin: 0;
+    font-family: 'mont';
+    background-color: #EBEFFF;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 1px solid #6B6B6B;
+    border-radius: 15px;
+    text-decoration: none;
+    color:  #161616;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+    background-color: #2776EA;
+}
+
+nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'mont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #161616;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+
+#contact {
+    margin-left: 60px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li .hover:after {
+    content: "";
+   position: absolute;
+   background-color: #2776EA;
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom: -10px;
+   transition: 0.3s;
+}
+
+nav ul li .hover:hover:after {
+    width: 100%;
+}
+
+/* dropdown */
+
+.dropbtn {
+background-color:  white;
+color: #000000;
+padding: 16px 0;
+font-size: 24px;
+font-weight: 400;
+font-family: inherit;
+border: none;
+cursor: pointer;
+margin-top: 0;
+letter-spacing: inherit;
+margin-left: 60px;
+}
+
+.dropbtn::after {
+content: "";
+position: absolute;
+background-color: #2776EA;
+height: 3px;
+width: 0;
+left: 14%;
+bottom: 8px;
+transition: 0.3s;
+margin-left: 40px;
+}
+
+.dropbtn:hover {
+color: #2776EA;
+margin-left: 60px;
+}
+
+.dropbtn:hover:after {
+width: 63%;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+margin-left: 60px;
+}
+
+.dropdown-content a {
+padding: 0px 16px;
+text-decoration: none;
+text-align: justify;
+display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+z-index: 33;
+}
+
+.dropdown:hover .dropbtn {
+background-color: white
+}
+
+/* down-hover*/
+
+nav ul li #a-tag:after {
+content: "";
+position: absolute;
+background-color: #2776EA;
+height: 3px;
+width: 0;
+left: 0;
+bottom: -10px;
+transition: 0.3s;
+}
+
+nav ul li #a-tag:hover {
+color: #2776EA;
+}
+
+nav ul li #a-tag:hover:after {
+width: 100%;
+}
+
+/* end of nav */
+
+.hero {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.top-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.top-div p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 362px;
+}
+
+.top-div .left {
+    padding-top: 206px;
+    padding-bottom: 206px;
+    margin-right: 40px;
+}
+
+.top-div .right {
+    margin-left: 40px;
+}
+
+/* second page */
+
+.second-page {
+    padding-top: 100px;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-page .left h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -20px;
+    margin-top: 0;
+}
+
+.second-page .left p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 928px;
+}
+
+.second-page .right h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -20px;
+    margin-top: 0;
+}
+
+.second-page .right p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.second-page .right p{
+    width: 216px;
+}
+
+/* end of second pg */
+
+.third-page {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.third-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    text-align: center;
+}
+
+.third-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.third-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of third page */
+
+.fourth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.fourth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    text-align: center;
+}
+
+.fourth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of fourth pGE */
+
+.fifth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: #07102B;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.fifth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.image-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*end of 5th */
+
+.sixth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.sixth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.sixth-page h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -15px;
+}
+
+.sixth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.sixth-page span {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.sixth-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 6th */
+
+.seventh-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.seventh-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.seventh-page h4 {
+        font-family: 'Mont';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 58px;
+        letter-spacing: 0.01em;
+        color: #000000;
+        margin-bottom: -15px;
+}
+
+.seventh-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.seventh-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 7th */
+
+.eigth-page {
+    background-color: #07102B;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main-text h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.main-paragraph {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: 70px;
+}
+
+.container-div {
+    display: flex;
+    gap: 270px;
+    justify-content: center;
+}
+
+.eigth-page .rec-div {
+    width: 100%;
+}
+
+.rec-1 {
+    width: 100%;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.7);
+    position: relative;
+}
+
+.rec-1 img {
+    position: absolute;
+    top: -30%;
+    left: 40%;
+}
+
+.rec-1 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    position: absolute;
+    left: 35%;
+    bottom: -20px;
+
+}
+
+.rec-1 .ky {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    position: absolute;
+    left: 40%;
+    bottom: -20px;
+
+}
+
+.container-div h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.container-div ol li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+.eigth-page .second-text {
+   min-height: 200px;
+}
+
+/* end of 8th */
+
+.ninth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.ninth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.ninth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+}
+
+.ninth-page .div {
+    padding-top: 30px;
+    display: flex;
+    gap: 8%;
+    justify-content: center;
+}
+
+.header {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.top-rec {
+    background-color: #07102B;
+    width: 100%;
+    height: 102px;
+    border-radius: 51px 51px 0px 0px;
+    position: relative;
+}
+
+.top-rec img {
+    position: absolute;
+    right: 3%;
+    top: 0;
+}
+
+.top-rec p {
+   position: absolute;
+   left: 5%;
+   top: 18%;
+}
+
+.div ol li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+    
+}
+
+.div-1 {
+    background-color: #fff;
+    border-radius: 51px 51px 51px 51px;
+    
+}
+
+.div-2 {
+    background-color: white;
+    border-radius: 51px 51px 51px 51px;
+    padding-bottom: 70px;
+    
+}
+
+.div-3 {
+    background-color: #fff;
+    border-radius: 51px 51px 51px 51px;
+    
+}
+.inner-text {
+    margin-left: 15px;
+    font-weight: 600 !important;
+}
+
+/* end of 9th */
+
+.tenth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.tenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.tenth-page h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.tenth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-top: -20px;
+}
+
+.tenth-page .text-div {
+    margin-top: -20px;
+}
+
+/* enf of 10th page */
+
+.eleventh-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.eleventh-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.eleventh-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-top: -20px;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+}
+
+/* enf of 11th page */
+
+.twelveth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.twelveth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.twelveth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-top: -20px;
+}
+
+/* end of 12th page */
+
+.thirteenth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.thirteenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.thirteenth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-top: -20px;
+}
+
+.thirteenth-page .space {
+ padding-top: 30px;
+ padding-bottom: 20px;
+}
+
+.thirteenth-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 13th page */
+
+.fourteenth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.fourteenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.fourteenth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-top: -20px;
+}
+
+/* end of 14th page */
+
+.fifteenth-page {
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    background-color: #07102B;
+}
+
+.fifteenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.fifteenth-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    margin-bottom: 2%;
+    color: #FFFFFF;
+} 
+
+.fifteenth-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 316px;
+    color: #FFFFFF;
+}
+
+.fifteenth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 349px;
+    color: #FFFFFF;
+}
+
+.profile-container-div {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.fifteenth-page .profile-div {
+    background: rgba(255, 255, 255, 0.7);
+    margin-left: 30px;
+    margin-right: 50px;
+    width: 35.25%;
+}
+
+.second-div h3 {
+    text-align: justify !important;
+}
+
+.deborah-paragraph p {
+    width: 694px !important;
+}
+
+.deborah-paragraph h3 {
+    font-weight: 900;
+}
+
+.fifteenth-page .img-div {
+    margin-top: 30px;
+}
+
+.fifteenth-page h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.fifteenth-page .sec-1 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+.fifteenth-page .sec-2 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+    
+}
+
+.fifteenth-page .sec-3 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+.fifteenth-page .sec-4 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+.fifteenth-page .sec-5 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+/* end of 15th page */
+
+.sixteenth-page {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #07102B;
+}
+
+.sixteenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.sixteenth-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    margin-bottom: 2%;
+    color: #FFFFFF;
+} 
+
+.sixteenth-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 316px;
+    color: #FFFFFF;
+}
+
+.sixteenth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 349px;
+    color: #FFFFFF;
+}
+
+.sixteenth-page.profile-container-div {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.sixteenth-page .profile-div {
+    background: rgba(255, 255, 255, 0.7);
+    margin-left: 30px;
+    margin-right: 50px;
+    width: 35.25%;
+}
+
+.sixteenth-page.second-div h3 {
+    text-align: justify !important;
+}
+
+.third-div {
+    position: absolute;
+    right: 30px;
+    bottom: -20px;
+}
+
+.david-paragraph p {
+    width: 694px !important;
+}
+
+.david-paragraph h3 {
+    font-weight: 900;
+}
+
+.sixteenth-page .img-div {
+    margin-top: 30px;
+}
+
+.sixteenth-page h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.sixteenth-page .sec-1 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+.sixteenth-page .sec-2 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+    
+}
+
+.sixteenth-page .sec-3 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+.sixteenth-page .sec-4 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+.sixteenth-page .sec-5 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+/* end of 16th page */
+
+.seventeenth-page {
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #07102B;
+}
+
+.seventeenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.seventeenth-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    margin-bottom: 2%;
+    color: #FFFFFF;
+} 
+
+.seventeenth-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 316px;
+    color: #FFFFFF;
+}
+
+.seventeenth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 349px;
+    color: #FFFFFF;
+}
+
+.seventeenth-page .profile-container-div {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.seventeenth-page .profile-div {
+    background: rgba(255, 255, 255, 0.7);
+    margin-left: 30px;
+    margin-right: 50px;
+    width: 35.25%;
+}
+
+.seventeenth-page.second-div h3 {
+    text-align: justify !important;
+}
+
+.third-div {
+    position: absolute;
+    right: 30px;
+    bottom: -20px;
+}
+
+.kardi-paragraph p {
+    width: 694px !important;
+}
+
+.kardi-paragraph h3 {
+    font-weight: 900;
+}
+
+.seventeenth-page .img-div {
+    margin-top: 30px;
+}
+
+.seventeenth-page h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.seventeenth-page .sec-1 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+.seventeenth-page .sec-2 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+    
+}
+
+.seventeenth-page .sec-3 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+.seventeenth-page .sec-4 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+.seventeenth-page .sec-5 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+/* end of 17th page */
+
+ .eighteenth-page {
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.eighteenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.eighteenth-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.eighteenth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    margin-top: -20px;
+    color: #000000;
+}
+
+.eighteenth-page .div-1 {
+    background-color: #EBEFFF;
+}
+
+.eighteenth-page .div-2 {
+    background-color: #EBEFFF;
+}
+
+.eighteenth-page .div-3 {
+    background-color: #EBEFFF;
+}
+
+.eighteenth-page .div-1 .img-div {
+    background-color: #FFFFFF;
+    height: 791px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.eighteenth-page .div-1 .img-div img {
+    width: 91.04%;
+    height: 676.44px;
+}
+
+.eighteenth-page .div-2 .img-div {
+    background-color: #FFFFFF;
+    height: 1630px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.eighteenth-page .div-2 .img-div img {
+    width: 92.53%;
+    height: 1523px;
+}
+
+.eighteenth-page .div-3 .img-div {
+    margin-top: 50px;
+}
+
+/* end of 18th page */
+
+.nineteenth-page {
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.nineteenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.nineteenth-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.nineteenth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 19th page */
+
+.twentieth-page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.twentieth-page .img-div {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 1256px;
+    position: relative;
+    overflow: hidden;
+}
+
+#pic {
+    height: 635px;
+    width: 294px;
+}
+
+.twentieth-page .img-div .one {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+.twentieth-page .img-div .two {
+    position: absolute;
+    left: 0;
+    top: 51.11%;
+}
+
+.twentieth-page .img-div .three {
+    position: absolute;
+    left: 21.07%;
+    top: -13.85%;
+}
+
+.twentieth-page .img-div .four {
+    position: absolute;
+    left: 21.07%;
+    top: 25.32%;
+}
+
+.twentieth-page .img-div .five {
+    position: absolute;
+    left: 21.07%;
+    top: 63.69%;
+}
+
+.twentieth-page .img-div .six {
+    position: absolute;
+    left: 42.14%;
+    top: -0.8%;
+}
+
+.twentieth-page .img-div .seven {
+    position: absolute;
+    left: 42.14%;
+    top: 50.16%;
+}
+
+.twentieth-page .img-div .eight {
+    position: absolute;
+    left: 63.22%;
+    top: -19.9%;
+}
+
+.twentieth-page .img-div .nine {
+    position: absolute;
+    left: 63.22%;
+    top: 13.14%;
+}
+
+.twentieth-page .img-div .ten {
+    position: absolute;
+    left: 63.22%;
+    top: 57.72%;
+}
+
+.twentieth-page .img-div .eleven {
+    position: absolute;
+    right: -2.30%;
+    top: -18.87%;
+}
+
+.twentieth-page .img-div .twelve {
+    position: absolute;
+    right: 0%;
+    top: 30.97%;
+
+    /*less than 39*/
+}
+
+.twentieth-page .img-div .thirteen {
+    position: absolute;
+    right: -2.30%;
+    top: 66.88%;
+}
+
+/* end of 20th page */
+
+.twenty-first-page {
+    padding-bottom: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.twenty-first-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.twenty-first-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 21th page */
+
+.twenty-second-page {
+    padding-bottom: 50px;
+}
+
+.twenty-second-page .img-div {
+    width: 100%;
+    display: flex;
+}
+
+.twenty-second-page .img-div img {
+    width: 100%;
+}
+
+/* end of 22nd page */
+
+.twenty-third-page {
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 50%;
+}
+
+.twenty-third-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.twenty-third-page .img-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.twenty-third-page .img-div video {
+    height: 100%;
+    width: 45%;
+    border-radius: 65px 65px 65px 65px;
+}
+
+/* end of 23th page */
+
+.twenty-fourth-page {
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.twenty-fourth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.twenty-fourth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 24th page */
+
+.twenty-fifth-page {
+    padding-bottom: 3%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.twenty-fifth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.twenty-fifth-page .img-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.twenty-fifth-page .img-div .div-1 {
+    background-color: inherit;
+}
+
+.twenty-fifth-page .img-div .div-2 {
+    background-color: inherit;
+    margin-left: -2%;
+}
+
+.twenty-fifth-page .img-div .div-3 {
+    background-color: inherit;
+}
+
+footer {
+    background-color:  #2776EA;
+    margin-top: 7%;
+}
+
+footer .image {
+   display: flex;
+   justify-content: center;
+   gap: 0.7%;
+   padding-top: 3.3%;
+   padding-bottom: 3.3%;
+}
+
+footer .image .mail {
+    margin-top: 8%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

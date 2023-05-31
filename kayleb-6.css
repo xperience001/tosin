@@ -1,0 +1,292 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'mont';
+    background-color: #EBEFFF;
+}
+
+nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'mont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #161616;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+
+#contact {
+    margin-left: 60px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li .hover:after {
+    content: "";
+   position: absolute;
+   background-color: #2776EA;
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom: -10px;
+   transition: 0.3s;
+}
+
+nav ul li .hover:hover:after {
+    width: 100%;
+}
+
+/* dropdown */
+
+.dropbtn {
+background-color:  white;
+color: #000000;
+padding: 16px 0;
+font-size: 24px;
+font-weight: 400;
+font-family: inherit;
+border: none;
+cursor: pointer;
+margin-top: 0;
+letter-spacing: inherit;
+margin-left: 60px;
+}
+
+.dropbtn::after {
+content: "";
+position: absolute;
+background-color: #2776EA;
+height: 3px;
+width: 0;
+left: 14%;
+bottom: 8px;
+transition: 0.3s;
+margin-left: 40px;
+}
+
+.dropbtn:hover {
+color: #2776EA;
+margin-left: 60px;
+}
+
+.dropbtn:hover:after {
+width: 63%;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+margin-left: 60px;
+}
+
+.dropdown-content a {
+padding: 0px 16px;
+text-decoration: none;
+text-align: justify;
+display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+z-index: 33;
+}
+
+.dropdown:hover .dropbtn {
+background-color: white
+}
+
+/* down-hover*/
+
+nav ul li #a-tag:after {
+content: "";
+position: absolute;
+background-color: #2776EA;
+height: 3px;
+width: 0;
+left: 0;
+bottom: -10px;
+transition: 0.3s;
+}
+
+nav ul li #a-tag:hover {
+color: #2776EA;
+}
+
+nav ul li #a-tag:hover:after {
+width: 100%;
+}
+
+/* end of nav */
+
+.hero {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 7%;
+    padding-bottom: 10%;
+    height: 80vh;
+}
+
+.hero-1 h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    margin-right: 87px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.hero .hero-1 {
+    position: relative;
+}
+
+.hero .hero-1 .text {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+}
+
+.hero-1 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.hero .hero-1 .img-div {
+    position: absolute;
+    left: 60%;
+    top: -9%;
+}
+
+.hero-2 {
+    margin-top: 13%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#general-properties {
+    width: 27.69%;
+    height: 169px;
+    background: #FFFFFF;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+}
+
+.hero-2 .container-1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-2 .container-1 .txt-div {
+    position: absolute;
+    bottom: 5px;
+}
+
+.hero-2 .container-1 img {
+    margin-top: 18px;
+    width: 15.4%;
+    height: 34.91%;
+}
+
+.hero-2 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.hero-2 .container-1 .txt-div-3 {
+    position: absolute;
+    bottom: 25px;
+}
+
+.hero-2 a {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+    text-decoration: none;
+}
+
+footer {
+    background-color:  #2776EA;
+    margin-top: 7%;
+}
+
+footer .image {
+   display: flex;
+   justify-content: center;
+   gap: 0.7%;
+   padding-top: 3.3%;
+   padding-bottom: 3.3%;
+}
+
+footer .image .mail {
+    margin-top: 8%;
+}

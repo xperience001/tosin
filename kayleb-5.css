@@ -1,0 +1,1570 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'mont';
+    background-color: #EBEFFF;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 1px solid #6B6B6B;
+    border-radius: 15px;
+    text-decoration: none;
+    color:  #161616;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+    background-color: #2776EA;
+}
+
+nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'mont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #161616;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+
+#contact {
+    margin-left: 60px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li .hover:after {
+    content: "";
+   position: absolute;
+   background-color: #2776EA;
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom: -10px;
+   transition: 0.3s;
+}
+
+nav ul li .hover:hover:after {
+    width: 100%;
+}
+
+/* dropdown */
+
+.dropbtn {
+background-color:  white;
+color: #000000;
+padding: 16px 0;
+font-size: 24px;
+font-weight: 400;
+font-family: inherit;
+border: none;
+cursor: pointer;
+margin-top: 0;
+letter-spacing: inherit;
+margin-left: 60px;
+}
+
+.dropbtn::after {
+content: "";
+position: absolute;
+background-color: #2776EA;
+height: 3px;
+width: 0;
+left: 14%;
+bottom: 8px;
+transition: 0.3s;
+margin-left: 40px;
+}
+
+.dropbtn:hover {
+color: #2776EA;
+margin-left: 60px;
+}
+
+.dropbtn:hover:after {
+width: 63%;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+margin-left: 60px;
+}
+
+.dropdown-content a {
+padding: 0px 16px;
+text-decoration: none;
+text-align: justify;
+display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+z-index: 33;
+}
+
+.dropdown:hover .dropbtn {
+background-color: white
+}
+
+/* down-hover*/
+
+nav ul li #a-tag:after {
+content: "";
+position: absolute;
+background-color: #2776EA;
+height: 3px;
+width: 0;
+left: 0;
+bottom: -10px;
+transition: 0.3s;
+}
+
+nav ul li #a-tag:hover {
+color: #2776EA;
+}
+
+nav ul li #a-tag:hover:after {
+width: 100%;
+}
+
+/* end of nav */
+
+
+.hero {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.top-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.top-div p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 362px;
+}
+
+.top-div .left {
+    padding-top: 206px;
+    padding-bottom: 206px;
+    margin-right: -40px;
+}
+
+.top-div .left .img-div{
+    display: flex;
+    justify-content: center;
+}
+
+.top-div .right {
+    margin-left: 40px;
+}
+
+/* second page */
+
+.second-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-page .left h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -10px;
+    margin-top: 0;
+}
+
+.second-page .left p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 914px;
+}
+
+.second-page .right h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -20px;
+    margin-top: 0;
+}
+
+.second-page .right p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.second-page .right p{
+    width: 216px;
+}
+
+/* end of second pg */
+
+.third-page {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.third-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    text-align: center;
+}
+
+.third-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.third-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of third page */
+
+.fourth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.fourth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    text-align: center;
+}
+
+.fourth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of fourth pGE */
+
+.fifth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: #07102B;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.fifth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.image-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*end of 5th */
+
+.sixth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.sixth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.sixth-page h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -15px;
+}
+
+.sixth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 6th */
+
+.seventh-page {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.seventh-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.seventh-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of seventh page */
+
+.eighth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.eighth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -20px;
+}
+
+/* end of 8th page */
+
+.ninth-page {
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    background-color: #07102B;
+}
+
+.ninth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.ninth-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    margin-bottom: -10px;
+    color: #FFFFFF;
+} 
+
+.ninth-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 316px;
+    color: #FFFFFF;
+}
+
+.ninth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 349px;
+    color: #FFFFFF;
+}
+
+.ninth-page .profile-container-div {
+    width: 100%;
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.ninth-page .profile-div {
+    margin-left: 0px;
+    width: 35.25%;
+}
+
+.ninth-page .profile-div .img-div {
+    width: 100%;
+}
+
+.ninth-page .profile-div .img-div img {
+    width: 90%;
+}
+
+.ninth-page .bar-div {
+    width: 1.18%;
+    height: 950px;
+    border-radius: 5px;
+    margin-right: 3%;
+    background-color: #FFFFFF;
+}
+
+.ninth-page .second-div h3 {
+    text-align: justify !important;
+    display: none;
+}
+
+.ninth-page .second-div {
+    padding-top: 7%;
+    width: 60.57%;
+    padding-right: 4%;
+}
+
+.ninth-page .second-div .txt-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 74.70%;
+    white-space: nowrap;
+}
+
+.ninth-page .second-div .txt-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 74.70%;
+    white-space: nowrap;
+}
+
+.ninth-page .second-div .txt-3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 66.02%;
+    white-space: nowrap;
+}
+
+.ninth-page .second-div .txt-bar {
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    width: 100%;
+    height: 14px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.ninth-page .second-div .txt-bar-2 {
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    width: 100%;
+    height: 14px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.ninth-page .second-div .txt-bar-3 {
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    width: 100%;
+    height: 14px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.ninth-page .second-div .txt-bar img {
+    position: absolute;
+    left: 44.29%;
+    top: -10px;
+}
+
+.ninth-page .second-div .txt-bar-2 #second {
+    position: absolute;
+    left: 95.37%;
+    top: -10px;
+}
+
+.ninth-page .second-div .txt-bar-3 #third {
+    position: absolute;
+    left: 69.33%;
+    top: -10px;
+}
+
+.pelumi-paragraph h3 {
+    font-weight: 900;
+}
+
+.ninth-page .img-div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.ninth-page h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF
+}
+
+.ninth-page .sec-1 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.ninth-page .sec-2 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+    
+}
+
+.ninth-page .sec-3 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.ninth-page .sec-4 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.ninth-page .sec-5 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.ninth-page .second-div .main-paragraph-div .main-paragraph {
+    width: 670px;
+}
+
+.ninth-page .goals {
+    margin-top: 55px;
+}
+
+.ninth-page .attitude {
+    margin-top: 55px;
+}
+
+.ninth-page .name {
+    font-weight: 900;
+}
+
+.ninth-page .attitude {
+    margin-bottom: 1%;
+}
+
+/* end of 9th page */
+
+.tenth-page {
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    background-color: #07102B;
+}
+
+.tenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.tenth-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    margin-bottom: -10px;
+    color: #FFFFFF;
+} 
+
+.tenth-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 316px;
+    color: #FFFFFF;
+}
+
+.tenth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 349px;
+    color: #FFFFFF;
+}
+
+.tenth-page .profile-container-div {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.tenth-page .profile-div {
+    background: #07102B;
+    margin-left: 0px;
+    width: 35.25%;
+}
+
+.tenth-page .profile-div .img-div {
+    width: 100%;
+}
+
+.tenth-page .profile-div .img-div img {
+    width: 90%;
+}
+
+.tenth-page .bar-div {
+    width: 1.18%;
+    margin-right: 3%;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.tenth-page .second-div h3 {
+    text-align: justify !important;
+    display: none;
+}
+
+.tenth-page .second-div {
+    padding-top: 15%;
+    width: 60.57%;
+    padding-right: 4%;
+}
+
+.tenth-page .second-div .txt-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 74.70%;
+    white-space: nowrap;
+}
+
+.tenth-page .second-div .txt-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 74.70%;
+    white-space: nowrap;
+}
+
+.tenth-page .second-div .txt-3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 66.02%;
+    white-space: nowrap;
+}
+
+.tenth-page .second-div .txt-bar {
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    width: 100%;
+    height: 14px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.tenth-page .second-div .txt-bar-2 {
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    width: 100%;
+    height: 14px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.tenth-page .second-div .txt-bar-3 {
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    width: 100%;
+    height: 14px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.tenth-page .second-div .txt-bar img {
+    position: absolute;
+    left: 25.51%;
+    top: -10px;
+}
+
+.tenth-page .second-div .txt-bar-2 #second {
+    position: absolute;
+    left: 53.68%;
+    top: -10px;
+}
+
+.tenth-page .second-div .txt-bar-3 #third {
+    position: absolute;
+    left: 48.36%;
+    top: -10px;
+}
+
+.ife-paragraph h3 {
+    font-weight: 900;
+}
+
+.tenth-page .img-div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.tenth-page h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF
+}
+
+.tenth-page .sec-1 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.tenth-page .sec-2 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+    
+}
+
+.tenth-page .sec-3 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.tenth-page .sec-4 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.tenth-page .sec-5 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.tenth-page .second-div .main-paragraph-div .main-paragraph {
+    width: 680px;
+}
+
+.tenth-page .goals {
+    margin-top: 55px;
+}
+
+.tenth-page .attitude {
+    margin-top: 55px;
+    margin-bottom: 1%;
+}
+
+.tenth-page .name {
+    font-weight: 900;
+}
+
+/* end of 11th page */
+
+.eleventh-page {
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    background-color: #07102B;
+}
+
+.eleventh-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.eleventh-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    margin-bottom: -10px;
+    color: #FFFFFF;
+} 
+
+.eleventh-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 316px;
+    color: #FFFFFF;
+}
+
+.eleventh-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 349px;
+    color: #FFFFFF;
+}
+
+.eleventh-page .profile-container-div {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.eleventh-page .profile-div {
+    background: #07102B;
+    margin-left: 0px;
+    width: 35.25%;
+}
+
+.eleventh-page .profile-div .img-div {
+    width: 100%;
+}
+
+.eleventh-page .profile-div .img-div img {
+    width: 90%;
+}
+
+.eleventh-page .bar-div {
+    width: 1.18%;
+    margin-right: 3%;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.eleventh-page .second-div h3 {
+    text-align: center !important;
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.eleventh-page .second-div {
+    padding-top: 10%;
+    width: 60.57%;
+    padding-right: 4%;
+}
+
+.eleventh-page .second-div .txt-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 74.70%;
+    white-space: nowrap;
+}
+
+.eleventh-page .second-div .txt-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 74.70%;
+    white-space: nowrap;
+}
+
+.eleventh-page .second-div .txt-3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 66.02%;
+    white-space: nowrap;
+}
+
+.eleventh-page .second-div .txt-bar {
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    width: 100%;
+    height: 14px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.eleventh-page .second-div .txt-bar-2 {
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    width: 100%;
+    height: 14px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.eleventh-page .second-div .txt-bar-3 {
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    width: 100%;
+    height: 14px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.eleventh-page .second-div .txt-bar img {
+    position: absolute;
+    left: 11.27%;
+    top: -10px;
+}
+
+.eleventh-page .second-div .txt-bar-2 #second {
+    position: absolute;
+    left: 50.55%;
+    top: -10px;
+}
+
+.eleventh-page .second-div .txt-bar-3 #third {
+    position: absolute;
+    left: 44.29%;
+    top: -10px;
+}
+
+.eleventh-page .img-div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.eleventh-page h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF
+}
+
+.eleventh-page .sec-1 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.eleventh-page .sec-2 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+    
+}
+
+.eleventh-page .sec-3 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.eleventh-page .sec-4 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.eleventh-page .sec-5 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -50px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.eleventh-page .second-div .main-paragraph-div .main-paragraph {
+    width: 680px;
+}
+
+.eleventh-page .goals {
+    margin-top: 55px;
+}
+
+.eleventh-page .attitude {
+    margin-top: 55px;
+    margin-bottom: 1%;
+}
+
+.eleventh-page .name {
+    font-weight: 900;
+}
+
+/*end of 11th page */
+
+.twelveth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.twelveth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.twelveth-page .div-1 .img-div {
+    background-color: #FFFFFF;
+    height: 1630px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.twelveth-page .div-1 .img-div img {
+    width: 92.53%;
+    height: 1523px;
+}
+
+.twelveth-page .div-2 .img-div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.twelveth-page .div-2 h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align:justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 12th page */
+
+.thirteenth-page h5 {
+    padding-left: 90px;
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.thirteenth-page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.thirteenth-page .img-div {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+#pic {
+    height: 594px;
+    width: 275px;
+
+}
+
+.thirteenth-page .img-div .one {
+    position: absolute;
+    left: 0%;
+    top: -3.75%;
+}
+
+.thirteenth-page .img-div .two {
+    position: absolute;
+    left: 0;
+    top: 48%;
+}
+
+.thirteenth-page .img-div .three {
+    position: absolute;
+    left: 20.17%;
+    top: -1.5%;
+}
+
+.thirteenth-page .img-div .four {
+    position: absolute;
+    left: 20.17%;
+    top: 50%;
+}
+
+.thirteenth-page .img-div .five {
+    position: absolute;
+    left: 40.34%;
+    top: -22%;
+}
+
+.thirteenth-page .img-div .six {
+    position: absolute;
+    left: 40.34%;
+    top: 19.1%;
+}
+
+.thirteenth-page .img-div .seven {
+    position: absolute;
+    left: 40.34%;
+    top: 60.5%;
+}
+
+.thirteenth-page .img-div .eight {
+    position: absolute;
+    left: 60.52%;
+    top: 0%;
+}
+
+.thirteenth-page .img-div .nine {
+    position: absolute;
+    left: 60.52%;
+    top: 51.4%;
+}
+
+.thirteenth-page .img-div .ten {
+    position: absolute;
+    right: 3%;
+    top: -24.99%;
+}
+
+.thirteenth-page .img-div .eleven {
+    position: absolute;
+    right: 3%;
+    top: 10.7%;
+}
+
+.thirteenth-page .img-div .twelve {
+    position: absolute;
+    right: 3%;
+    top: 57.1%;
+}
+
+/* end of 13th */
+
+.fourteenth-page {
+    padding-bottom: 50px;
+}
+
+.fourteenth-page h5 {
+        padding-left: 90px;
+        font-family: 'Mont';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 58px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #000000;
+}
+
+.fourteenth-page .img-div {
+    background-color: #fff;
+    width: 100%;
+    height: 893px;
+}
+
+.fourteenth-page .img-div img {
+    width: 100%;
+}
+
+
+/*end of 14th */
+
+.fifteenth-page {
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 50%;
+}
+
+.fifteenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.fifteenth-page .img-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fifteenth-page .img-div video {
+    height: 100%;
+    width: 45%;
+}
+
+/* end of 15th page */
+
+.sixteenth-page {
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.sixteenth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.sixteenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 16th page */
+
+.seventeenth-page {
+    padding-bottom: 3%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.seventeenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.seventeenth-page .img-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.seventeenth-page .img-div .div-1 {
+    background-color: inherit;
+}
+
+.seventeenth-page .img-div .div-2 {
+    background-color: inherit;
+}
+
+.seventeenth-page .img-div .div-3 {
+    background-color: inherit;
+}
+
+footer {
+    background-color:  #2776EA;
+    margin-top: 7%;
+}
+
+footer .image {
+   display: flex;
+   justify-content: center;
+   gap: 0.7%;
+   padding-top: 3.3%;
+   padding-bottom: 3.3%;
+}
+
+footer .image .mail {
+    margin-top: 8%;
+}
+
+

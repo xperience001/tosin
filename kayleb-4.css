@@ -1,0 +1,978 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vmax;
+    margin: 0;
+    font-family: 'mont';
+    background-color: #EBEFFF;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 1px solid #6B6B6B;
+    border-radius: 15px;
+    text-decoration: none;
+    color:  #161616;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+    background-color: #2776EA;
+}
+
+nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'mont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #161616;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+
+#contact {
+    margin-left: 60px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li .hover:after {
+    content: "";
+   position: absolute;
+   background-color: #2776EA;
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom: -10px;
+   transition: 0.3s;
+}
+
+nav ul li .hover:hover:after {
+    width: 100%;
+}
+
+/* dropdown */
+
+.dropbtn {
+background-color:  white;
+color: #000000;
+padding: 16px 0;
+font-size: 24px;
+font-weight: 400;
+font-family: inherit;
+border: none;
+cursor: pointer;
+margin-top: 0;
+letter-spacing: inherit;
+margin-left: 60px;
+}
+
+.dropbtn::after {
+content: "";
+position: absolute;
+background-color: #2776EA;
+height: 3px;
+width: 0;
+left: 14%;
+bottom: 8px;
+transition: 0.3s;
+margin-left: 40px;
+}
+
+.dropbtn:hover {
+color: #2776EA;
+margin-left: 60px;
+}
+
+.dropbtn:hover:after {
+width: 63%;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+margin-left: 60px;
+}
+
+.dropdown-content a {
+padding: 0px 16px;
+text-decoration: none;
+text-align: justify;
+display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+z-index: 33;
+}
+
+.dropdown:hover .dropbtn {
+background-color: white
+}
+
+/* down-hover*/
+
+nav ul li #a-tag:after {
+content: "";
+position: absolute;
+background-color: #2776EA;
+height: 3px;
+width: 0;
+left: 0;
+bottom: -10px;
+transition: 0.3s;
+}
+
+nav ul li #a-tag:hover {
+color: #2776EA;
+}
+
+nav ul li #a-tag:hover:after {
+width: 100%;
+}
+
+/* end of nav */
+
+.hero {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.top-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.top-div .left {
+    margin-left: 40px;
+}
+
+.top-div .right {
+    padding-top: 206px;
+    padding-bottom: 206px;
+    margin-right: 40px;
+}
+
+/* second page */
+
+.second-page {
+    padding-top: 100px;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-page .left h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -20px;
+    margin-top: 0;
+}
+
+.second-page .left p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 928px;
+}
+
+.second-page .right h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -20px;
+    margin-top: 0;
+}
+
+.second-page .right p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.second-page .right p{
+    width: 216px;
+}
+
+/* end of second pg */
+
+.third-page {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.third-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    text-align: center;
+}
+
+.third-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.third-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of third page */
+
+.fourth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.fourth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    text-align: center;
+}
+
+.fourth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of fourth pGE */
+
+.fifth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: #07102B;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.fifth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.image-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*end of 5th */
+
+.sixth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.sixth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.sixth-page h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -15px;
+}
+
+.sixth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 6th */
+
+.seventh-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.seventh-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.seventh-page .h3 {
+    text-align: justify !important;
+}
+
+.seventh-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 7th page */
+
+.eighth-page {
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    background-color: #07102B;
+}
+
+.eighth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.eighth-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    margin-bottom: 2%;
+    color: #FFFFFF;
+} 
+
+.eighth-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 316px;
+    color: #FFFFFF;
+}
+
+.eighth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 349px;
+    color: #FFFFFF;
+}
+
+.eighth-page .profile-container-div {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.eighth-page .profile-div {
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    width: 35.25%;
+}
+
+.eighth-page .profile-div .img-div {
+    width: 100%;
+}
+
+.eighth-page .profile-div .img-div img {
+    width: 70%;
+}
+
+.eighth-page .second-div h3 {
+    text-align: justify !important;
+}
+
+.eighth-page .third-div {
+    position: absolute;
+    right: 30px;
+    bottom: -20px;
+}
+
+.eighth-page .darasimi-paragraph p {
+    width: 694px !important;
+}
+
+.eighth-page .darasimi-paragraph h3 {
+    font-weight: 900;
+}
+
+.eighth-page .img-div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.eighth-page h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.eighth-page .sec-1 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -30px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+.eighth-page .sec-2 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -30px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+    
+}
+
+.eighth-page .sec-3 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -30px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+
+/* end of 8th page */
+
+.ninth-page {
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    background-color: #07102B;
+}
+
+.ninth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.ninth-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    margin-bottom: 2%;
+    color: #FFFFFF;
+} 
+
+.ninth-page ul li {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 316px;
+    color: #FFFFFF;
+}
+
+.ninth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    width: 349px;
+    color: #FFFFFF;
+}
+
+.ninth-page .profile-container-div {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.ninth-page .profile-div {
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: 42px;
+    margin-left: 30px;
+    margin-right: 50px;
+    width: 35.25%;
+}
+
+.ninth-page .profile-div .img-div {
+    width: 100%;
+}
+
+.ninth-page .profile-div .img-div img {
+    width: 70%;
+}
+
+.ninth-page .second-div h3 {
+    text-align: justify !important;
+}
+
+.ninth-page .third-div {
+    position: absolute;
+    right: 30px;
+    bottom: -20px;
+}
+
+.ninth-page .second-div .tunde-paragraph h3 {
+    font-weight: 900;
+}
+
+.ninth-page .tunde-paragraph p {
+    width: 800px !important;
+}
+
+.eighth-page .tunde-paragraph h3 {
+    font-weight: 900;
+}
+
+.ninth-page .img-div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.ninth-page h4 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.ninth-page .sec-1 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -30px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+.ninth-page .sec-2 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -30px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+    
+}
+
+.ninth-page .sec-3 p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -30px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    width: 100%;
+}
+
+.tunde-div p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.tunde-div span {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: 0.2px;
+    position: absolute;
+    left: 18%;
+}
+
+/* end of 9th */
+
+.tenth-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.tenth-page .img-div {
+    display: flex;
+    justify-content: center;
+}
+
+.tenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.tenth-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 58px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: -10px;
+}
+
+.tenth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    margin-bottom: 30px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 10th */
+
+.eleventh-page {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+}
+
+.eleventh-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.eleventh-page h5 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 58px;
+    margin-bottom: -10px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.eleventh-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    margin-bottom: 30px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* end of 11th */
+
+.twelveth-page .img-div {
+    width: 100%;
+    height: 600px;
+}
+
+.twelveth-page .img-div img {
+    width: 100%;
+}
+
+/* end of 12th */
+
+.thirteenth-page {
+    margin-top: 260px;
+    padding-top: 80px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 90px;
+}
+
+.thirteenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.thirteenth-page p {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.thirteenth-page span {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.thirteenth-page .img-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+/* end of 13th page */
+
+.fourteenth-page {
+    padding-bottom: 3%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.fourteenth-page h3 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.fourteenth-page .img-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.fourteenth-page .img-div .div-1 {
+    background-color: inherit;
+}
+
+.fourteenth-page .img-div .div-2 {
+    background-color: inherit;
+    margin-left: -2%;
+}
+
+.fourteenth-page .img-div .div-3 {
+    background-color: inherit;
+}
+
+footer {
+    background-color:  #2776EA;
+    margin-top: 7%;
+}
+
+footer .image {
+   display: flex;
+   justify-content: center;
+   gap: 0.7%;
+   padding-top: 3.3%;
+   padding-bottom: 3.3%;
+}
+
+footer .image .mail {
+    margin-top: 8%;
+}
+
+
